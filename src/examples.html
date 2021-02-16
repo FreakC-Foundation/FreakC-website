@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FreakC</title>
+	<script src="https://unpkg.com/rottenjs"></script>
+	<script src="./libs/anime.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="./styles/main.css">
+	<link rel="stylesheet" type="text/css" href="./styles/stylesheet.css">
+	<link rel="icon" href="./assets/logo.png">
+</head>
+<body>
+	<div class="app">
+		<ul class="nav">
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="./examples.html">Examples</a></li>
+			<li><a href="https://github.com/nguyenphuminh/FreakC/blob/master/TUTORIAL.md" target="_blank">Documentations</a></li>
+			<li style="float:right"><a href="https://github.com/nguyenphuminh/FreakC" target="_blank">Github</a></li>
+			<li style="float:right"><a href="./assets/FreakC.zip" download target="_blank">Install</a></li>
+		</ul>
+		<div align="center" class="container">
+			<div class="header">Examples</div>
+			<br/><br/><br/><br/>
+			<a href="https://github.com/nguyenphuminh/FreakC/blob/master/TUTORIAL.md" target="_blank"><button>Get Started!</button></a>
+			<a href="https://github.com/nguyenphuminh/FreakC" target="_blank"><button>Github</button></a>
+			<a href="https://discord.gg/h9txFRJM" target="_blank"><button>Discord</button></a>
+			<br/><br/><br/><br/>
+			<div class="quote">Click on the code to zoom in</div>
+			<br/><br/><br/><br/>
+			<div class="ex1">
+			<p align="left" style='width: 42%;'>HelloWorld.fclang</p>
+			<div class='codebox' align="left" onclick="scale('.ex1')">
+				<span style="color:#e53840; ">Swear[fnc]</span> Hello, World^!
+			</div>
+			</div>
+			<br/><br/><br/><br/>
+			<div class="ex2">
+			<p align="left" style='width: 42%;'>Calculator.fclang</p>
+			<div class='codebox' align="left" onclick="scale('.ex2')">
+				<span style="color:#433b80; ">PoopFnc[fnc]</span> menu
+				<br/>
+				<span style="color:#e53840; ">Forget[fnc]</span>
+				<br/>
+				<span style="color:#e53840; ">SwearLine[fnc]</span>     Enter your Math problem:
+				<br/>
+				<span style="color:#433b80; ">PoopInput[fnc]</span> prob=
+				<br/>
+				<span style="color:#433b80; ">PoopInt[fnc]</span> ans=%prob% 2>nul
+				<br/>
+				<span style="color:#e53840; ">Swear[fnc]</span> Answer: %ans%
+				<br/>
+				<span style="color:#433b80; ">GotoToilet[fnc]</span>
+				<br/>
+				<span style="color:#433b80; ">EatFnc[fnc]</span> menu
+			</div>
+			</div><br/><br/><br/><br/>
+			<div class="ex3">
+			<p align="left" style='width: 42%;'>Fizzbuzz.fclang</p>
+		<div class='codebox' align="left" onclick="scale('.ex3')">
+			<span style="color:#e53840; ">PoopInt[fnc]</span> count=1
+			<br/>
+			<span style="color:#433b80; ">PoopFnc[fnc]</span> loop
+			<br/>
+			<span style="color:#5246ab; ">DoIfFalse[fnc]</span> %count% <span style="color:#e74c3c; ">LSS</span> 101 (
+			<br/>
+				&#160;&#160;<span style="color:#433b80; ">EatFnc[fnc]</span> end
+				<br/>
+			) 
+			<br/>
+			<span style="color:#433b80; ">PoopInt[fnc]</span> fizzbuzz=%count% <span style="color:#e74c3c; ">%%</span> 15
+			<br/>
+			<span style="color:#433b80; ">PoopInt[fnc]</span> fizz=%count% <span style="color:#e74c3c; ">%%</span> 3
+			<br/>
+			<span style="color:#433b80; ">PoopInt[fnc]</span> buzz=%count% <span style="color:#e74c3c; ">%%</span> 5
+			<br/>
+			<span style="color:#5246ab; ">DoIf[fnc]</span> %fizzbuzz% <span style="color:#e74c3c; ">==</span> 0 (
+			<br/>
+				&#160;&#160;<span style="color:#e53840; ">Swear[fnc]</span> FizzBuzz
+				<br/>
+			) <span style="color:#5246ab; ">OrNot[fnc]</span> <span style="color:#5246ab; ">DoIf[fnc]</span> %fizz% <span style="color:#e74c3c; ">==</span> 0 (
+			<br/>
+				&#160;&#160;<span style="color:#e53840; ">Swear[fnc]</span> Fizz
+				<br/>
+			) <span style="color:#5246ab; ">OrNot[fnc]</span> <span style="color:#5246ab; ">DoIf[fnc]</span> %buzz% <span style="color:#e74c3c; ">==</span> 0 (
+			<br/>
+				&#160;&#160;<span style="color:#e53840; ">Swear[fnc]</span> Buzz
+				<br/>
+			) <span style="color:#5246ab; ">OrNot[fnc]</span> (
+			<br/>
+				&#160;&#160;<span style="color:#e53840; ">Swear[fnc]</span> %count%
+				<br/>
+			)
+			<br/>
+			<span style="color:#433b80; ">PoopInt[fnc]</span> count++
+			<br/>
+			<span style="color:#433b80; ">EatFnc[fnc]</span> loop
+			<br/>
+			<span style="color:#433b80; ">PoopFnc[fnc]</span> end
+			<br/>
+		</div>
+		</div>
+		<br/>
+		<br/>
+		<a onclick="rt('ul').scroll()"><button>Scroll up!</button></a>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		</div>
+	</div>
+	<script>
+		let turn1=true,turn2=true,turn3=true;
+		function scaleUp(target){
+			anime({
+				targets: target,
+				scale:12/10,
+			})
+		}
+		function scaleDown(target){
+			anime({
+				targets: target,
+				scale:1,
+			})
+		}
+		function scale(tar){
+			if (tar == "ex1"){
+				if (turn1 == true) {
+					scaleUp(tar);
+					turn1=false;
+				} else {
+					scaleDown(tar);
+					turn1=true;
+				}
+			} else if (tar == "ex2"){
+				if (turn2 == true) {
+					scaleUp(tar);
+					turn2=false;
+				} else {
+					scaleDown(tar);
+					turn2=true;
+				}
+			} else {
+				if (turn3 == true) {
+					scaleUp(tar);
+					turn3=false;
+				} else {
+					scaleDown(tar);
+					turn3=true;
+				}
+			}
+		}
+	</script>
+</body>
+</html>
