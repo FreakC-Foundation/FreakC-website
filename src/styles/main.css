@@ -1,3 +1,4 @@
+
 body{
 	margin: 0;
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -21,9 +22,11 @@ li:last-child {
 	border-right: none;
 }
 
+
+
 iframe {
 	cursor: pointer;
-	transition: 0.5s;
+	transition: 0.5s ease-in-out;
 	border:none;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	border-radius: 10px;
@@ -44,7 +47,7 @@ li a {
 	padding: 16px 20px;
 	text-decoration: none;
 	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	transition: 0.6s;
+	transition: 0.6s ease-in-out;
 	cursor: pointer;
 }
 
@@ -74,19 +77,24 @@ img {
 
 button{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	border-radius:10px;
 	padding: 1% 2.1%;
-	border:3px solid rgb(70, 64, 64);
+	border:none;
 	background-color:rgb(70, 64, 64);
 	color:white;
 	cursor: pointer;
-	transition: 0.4s;
+	transition: 0.4s ease-in-out;
+	font-family: 'Cinzel', serif;
+    font-family: 'Dancing Script', cursive;
+    width: 150px;
+    height: 60px;
 }
 
 button:hover{
-	border:3px solid rgb(70, 64, 64);
-	background-color:white;
-	color:rgb(70, 64, 64);
+	border-radius:50px;
+	background-color: white;
+	color:#544E4F;
+	text-decoration: none;
+	border:#413839;
 }
 
 * {
@@ -109,7 +117,7 @@ button:hover{
 	padding:1%;
 	width: 40%;
 	cursor: pointer;
-	transition: 0.5s;
+	transition: 0.5s ease-in-out;
 	border-radius: 4px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -123,7 +131,7 @@ button:hover{
 	border-radius:50%;
 	margin-left:1%;
 	cursor: pointer;
-	transition: 0.5s;
+	transition: 0.5s ease-in-out;
 }
 
 .logo:hover{
