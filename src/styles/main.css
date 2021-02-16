@@ -21,6 +21,24 @@ li:last-child {
 	border-right: none;
 }
 
+
+
+iframe {
+	cursor: pointer;
+	transition: 0.5s;
+	border:none;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
+}
+
+iframe:hover{
+	box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2), 0 22px 36px 0 rgba(0, 0, 0, 0.19);
+}
+
+.yt-box{
+	margin-top:5%;
+}
+
 li a {
 	display: block;
 	color: white;
@@ -92,6 +110,24 @@ button:hover{
 	background-color: white;
 	padding:1%;
 	width: 40%;
+	cursor: pointer;
+	transition: 0.5s;
 	border-radius: 4px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.codebox:hover{
+	box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2), 0 22px 36px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius:50%;
+	margin-left:1%;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.logo:hover{
+	box-shadow: 0 20px 24px 0 rgba(0, 0, 0, 0.2), 0 22px 36px 0 rgba(0, 0, 0, 0.19);
 }
