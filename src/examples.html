@@ -31,72 +31,72 @@
 			<div class="ex1">
 			<p align="left" style='width: 42%'>HelloWorld.fclang</p>
 			<div class='codebox' align="left" onclick="scale('.ex1')">
-				<span style="color:#e53840; ">Swear[fnc]</span> Hello, World^!
+				<span style="color:#e53840; ">print[]</span> Hello, World^!
 			</div>
 			</div>
 			<br/><br/><br/><br/>
 			<div class="ex2">
 			<p align="left" style='width: 42%'>Calculator.fclang</p>
 			<div class='codebox' align="left" onclick="scale('.ex2')">
-				<span style="color:#433b80; ">PoopFnc[fnc]</span> menu
+				<span style="color:#433b80; ">label[]</span> menu
 				<br/>
-				<span style="color:#e53840; ">Forget[fnc]</span>
+				<span style="color:#e53840; ">clrscr[]</span>
 				<br/>
-				<span style="color:#e53840; ">SwearLine[fnc]</span>     Enter your Math problem:
+				<span style="color:#e53840; ">print[]</span>     Enter your Math problem:
 				<br/>
-				<span style="color:#433b80; ">PoopInput[fnc]</span> prob=
+				<span style="color:#433b80; ">inp[]</span> prob=
 				<br/>
-				<span style="color:#433b80; ">PoopInt[fnc]</span> ans=%prob% 2>nul
+				<span style="color:#433b80; ">eq[]</span> ans=%prob% 2>nul
 				<br/>
-				<span style="color:#e53840; ">Swear[fnc]</span> Answer: %ans%
+				<span style="color:#e53840; ">print[]</span> Answer: %ans%
 				<br/>
-				<span style="color:#433b80; ">GotoToilet[fnc]</span>
+				<span style="color:#433b80; ">stop[]</span>
 				<br/>
-				<span style="color:#433b80; ">EatFnc[fnc]</span> menu
+				<span style="color:#433b80; ">goto[]</span> menu
 			</div>
 			</div><br/><br/><br/><br/>
 			<div class="ex3">
 			<p align="left" style='width: 42%'>Fizzbuzz.fclang</p>
 		<div class='codebox' align="left" onclick="scale('.ex3')">
-			<span style="color:#e53840; ">PoopInt[fnc]</span> count=1
+			<span style="color:#e53840; ">eq[]</span> count=1
 			<br/>
-			<span style="color:#433b80; ">PoopFnc[fnc]</span> loop
+			<span style="color:#433b80; ">label[]</span> loop
 			<br/>
-			<span style="color:#5246ab; ">DoIfFalse[fnc]</span> %count% <span style="color:#e74c3c; ">LSS</span> 101 (
+			<span style="color:#5246ab; ">if_not[]</span> %count% <span style="color:#e74c3c; ">LSS</span> 101 (
 			<br/>
-				&#160;&#160;<span style="color:#433b80; ">EatFnc[fnc]</span> end
+				&#160;&#160;<span style="color:#433b80; ">goto[]</span> end
 				<br/>
 			) 
 			<br/>
-			<span style="color:#433b80; ">PoopInt[fnc]</span> fizzbuzz=%count% <span style="color:#e74c3c; ">%%</span> 15
+			<span style="color:#433b80; ">eq[]</span> fizzbuzz=%count% <span style="color:#e74c3c; ">%%</span> 15
 			<br/>
-			<span style="color:#433b80; ">PoopInt[fnc]</span> fizz=%count% <span style="color:#e74c3c; ">%%</span> 3
+			<span style="color:#433b80; ">eq[]</span> fizz=%count% <span style="color:#e74c3c; ">%%</span> 3
 			<br/>
-			<span style="color:#433b80; ">PoopInt[fnc]</span> buzz=%count% <span style="color:#e74c3c; ">%%</span> 5
+			<span style="color:#433b80; ">eq[]</span> buzz=%count% <span style="color:#e74c3c; ">%%</span> 5
 			<br/>
-			<span style="color:#5246ab; ">DoIf[fnc]</span> %fizzbuzz% <span style="color:#e74c3c; ">==</span> 0 (
+			<span style="color:#5246ab; ">if[]</span> %fizzbuzz% <span style="color:#e74c3c; ">==</span> 0 (
 			<br/>
-				&#160;&#160;<span style="color:#e53840; ">Swear[fnc]</span> FizzBuzz
+				&#160;&#160;<span style="color:#e53840; ">print[]</span> FizzBuzz
 				<br/>
-			) <span style="color:#5246ab; ">OrNot[fnc]</span> <span style="color:#5246ab; ">DoIf[fnc]</span> %fizz% <span style="color:#e74c3c; ">==</span> 0 (
+			) <span style="color:#5246ab; ">el[]</span> <span style="color:#5246ab; ">if[]</span> %fizz% <span style="color:#e74c3c; ">==</span> 0 (
 			<br/>
-				&#160;&#160;<span style="color:#e53840; ">Swear[fnc]</span> Fizz
+				&#160;&#160;<span style="color:#e53840; ">print[]</span> Fizz
 				<br/>
-			) <span style="color:#5246ab; ">OrNot[fnc]</span> <span style="color:#5246ab; ">DoIf[fnc]</span> %buzz% <span style="color:#e74c3c; ">==</span> 0 (
+			) <span style="color:#5246ab; ">el[]</span> <span style="color:#5246ab; ">if[]</span> %buzz% <span style="color:#e74c3c; ">==</span> 0 (
 			<br/>
-				&#160;&#160;<span style="color:#e53840; ">Swear[fnc]</span> Buzz
+				&#160;&#160;<span style="color:#e53840; ">print[]</span> Buzz
 				<br/>
-			) <span style="color:#5246ab; ">OrNot[fnc]</span> (
+			) <span style="color:#5246ab; ">el[]</span> (
 			<br/>
-				&#160;&#160;<span style="color:#e53840; ">Swear[fnc]</span> %count%
+				&#160;&#160;<span style="color:#e53840; ">print[]</span> %count%
 				<br/>
 			)
 			<br/>
-			<span style="color:#433b80; ">PoopInt[fnc]</span> count++
+			<span style="color:#433b80; ">eq[]</span> count++
 			<br/>
-			<span style="color:#433b80; ">EatFnc[fnc]</span> loop
+			<span style="color:#433b80; ">goto[]</span> loop
 			<br/>
-			<span style="color:#433b80; ">PoopFnc[fnc]</span> end
+			<span style="color:#433b80; ">label[]</span> end
 			<br/>
 		</div>
 		</div>
@@ -107,7 +107,7 @@
 			<a href="https://www.facebook.com/FreakC-Programming-Language-111425377421861" target="_blank"><img class="logo" src="./assets/fb-logo.png"></a>
 			<a href="https://github.com/FreakC-Foundation/FreakC" target="_blank"><img class="logo" src="./assets/gh-logo.png"></a>
 			<a href="https://npmgames.itch.io/freakc" target="_blank"><img class="logo" src="./assets/io-logo.png"></a>
-			<a href="https://discord.com/invite/8PjqmzVFer" target="_blank"><img class="logo" src="./assets/dc-logo.png"></a>
+			<a href="https://discord.gg/h9txFRJM" target="_blank"><img class="logo" src="./assets/dc-logo.png"></a>
 		<br/>
 		<br/>
 		<br/>
